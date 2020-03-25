@@ -6,16 +6,27 @@ namespace MenuMasterLibrary
 {
     public class FoodClass
     {
-
-        //Set FoodMenu somewhere
-
-
         public string FoodName { get; set; }
 
-        public string FoodDescription { get; set; }
+
+        public string FoodContent { get; set; }
+
 
         public string SpecialInfo { get; set; }
 
+
         public double Price { get; set; }
+
+
+        public FoodClass(string FoodName, string FoodContent, string SpecialInfo, double Price)
+        {
+            this.FoodName = FoodName;
+            this.FoodContent = FoodContent;
+            this.SpecialInfo = SpecialInfo;
+            this.Price = Price;
+        }
+
     }
+            
 }
+

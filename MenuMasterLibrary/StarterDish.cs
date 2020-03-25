@@ -4,11 +4,11 @@ using System.Text;
 
 namespace MenuMasterLibrary
 {
-    public class StarterFood
+    public class StarterDish
     {
-        public string FoodName { get; set; }
+        public string StarterDishName { get; set; }
 
-        public string FoodDescription { get; set; }
+        public string StarterDishDescription { get; set; }
 
         public string SpecialInfo { get; set; }
 

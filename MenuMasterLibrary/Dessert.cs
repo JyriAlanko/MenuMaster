@@ -6,9 +6,9 @@ namespace MenuMasterLibrary
 {
     public class Dessert
     {
-        public string FoodName { get; set; }
+        public string DessertName { get; set; }
 
-        public string FoodDescription { get; set; }
+        public string DessertDescription { get; set; }
 
         public string SpecialInfo { get; set; }
 
