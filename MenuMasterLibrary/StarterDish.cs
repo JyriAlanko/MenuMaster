@@ -13,5 +13,17 @@ namespace MenuMasterLibrary
         public string SpecialInfo { get; set; }
 
         public double Price { get; set; }
+
+        public StarterDish()
+        {
+
+        }
+        public StarterDish(string StarterDishName, string StarterDishDescription, string SpecialInfo, double Price)
+        {
+            this.StarterDishName = StarterDishName;
+            this.StarterDishDescription = StarterDishDescription;
+            this.SpecialInfo = SpecialInfo;
+            this.Price = Price;
+        }
     }
 }

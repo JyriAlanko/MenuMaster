@@ -6,8 +6,7 @@ namespace MenuMasterLibrary
 {
     public class DishMenu
     {
-        //Set Restaurant somewhere
-
+         
         public string MenuName { get; set; }
 
         public List<StarterDish> StarterDishes { get; set; } = new List<StarterDish>();
@@ -16,9 +15,15 @@ namespace MenuMasterLibrary
 
         public List<Dessert> Desserts { get; set; } = new List<Dessert>();
 
+
+        public DishMenu()
+        {
+
+        }
         public DishMenu (string MenuName)
         {
             this.MenuName = MenuName;
+
         }
 
     }

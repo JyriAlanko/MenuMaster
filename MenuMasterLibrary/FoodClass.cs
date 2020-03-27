@@ -8,16 +8,16 @@ namespace MenuMasterLibrary
     {
         public string FoodName { get; set; }
 
-
         public string FoodContent { get; set; }
-
 
         public string SpecialInfo { get; set; }
 
-
         public double Price { get; set; }
 
+        public FoodClass()
+        {
 
+        }
         public FoodClass(string FoodName, string FoodContent, string SpecialInfo, double Price)
         {
             this.FoodName = FoodName;

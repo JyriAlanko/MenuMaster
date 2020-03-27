@@ -6,14 +6,9 @@ namespace MenuMasterLibrary
 {
     public class Handler
     {
-        public List<Restaurant> Restaurants { get; set; } = new List<Restaurant>();
 
-        public List<DishMenu> DishMenus { get; set; } = new List<DishMenu>();
-                
-        public List<FoodClass> FoodClasses { get; set; } = new List<FoodClass>();
-                
-        public List<StarterDish> StarterDishes { get; set; } = new List<StarterDish>();
-
+        //List<Restaurant> restaurants = new List<Restaurant>();
+ 
 
         public Restaurant CreateRestaurant()
         {
@@ -30,8 +25,101 @@ namespace MenuMasterLibrary
             return toReturn;
         }
 
+        public DishMenu CreateDishMenu()
+        {
+            Console.WriteLine("Enter Name of the Menu");
+            var MenuName = Console.ReadLine();
+
+            DishMenu toReturn = new DishMenu(MenuName);
+            return toReturn;
+        }
+
+        //public Restaurant AddMenuToRestaurant()
+        //{
+
+        //    chosen = 0;
+        //    int MenuNamechoice = Convert.ToInt32(Console.ReadLine());
+        //    MenuNamechoice = MenuNamechoice - 1;
+        //    chosen.MenuName = 
+
+        //    Restaurant chosen = new Restaurant(MenuName);
+
+
+
+        //    var MenuName = 
+        //    chosen.MenuName = new Restaurant(MenuName);
+
+            
+             
+
+
+        //    Restaurant toReturn = new Restaurant(MenuName);
+        //    return toReturn;
+        //}
+
+        public StarterDish CreateStarterDish()
+        {
+
+            Console.WriteLine("Enter name of the dish ");
+            var StarterDishName = Console.ReadLine();
+
+            Console.WriteLine("Enter contents of the dish");
+            var StarterDishDescription = Console.ReadLine();
+
+            Console.WriteLine("Enter special info about the dish");
+            var SpecialInfo = Console.ReadLine();
+
+            Console.WriteLine("Enter price of the dish");
+            var Price = Convert.ToDouble(Console.ReadLine());
+
+            StarterDish toReturn = new StarterDish(StarterDishName, StarterDishDescription, SpecialInfo, Price);
+            return toReturn;
+
+        }
+
+        public Dessert CreateDessert()
+        {
+
+            Console.WriteLine("Enter name of the dish ");
+            var DessertName = Console.ReadLine();
+
+            Console.WriteLine("Enter contents of the dish");
+            var DessertDescription = Console.ReadLine();
+
+            Console.WriteLine("Enter special info about the dish");
+            var SpecialInfo = Console.ReadLine();
+
+            Console.WriteLine("Enter price of the dish");
+            var Price = Convert.ToDouble(Console.ReadLine());
+
+            Dessert toReturn = new Dessert(DessertName, DessertDescription, SpecialInfo, Price);
+            return toReturn;
+
+        }
+
+        public MainDish CreateMainDish()
+        {
+
+            Console.WriteLine("Enter name of the dish ");
+            var MainDishName = Console.ReadLine();
+
+            Console.WriteLine("Enter contents of the dish");
+            var MainDishDescription = Console.ReadLine();
+
+            Console.WriteLine("Enter special info about the dish");
+            var SpecialInfo = Console.ReadLine();
+
+            Console.WriteLine("Enter price of the dish");
+            var Price = Convert.ToDouble(Console.ReadLine());
+
+            MainDish toReturn = new MainDish(MainDishName, MainDishDescription, SpecialInfo, Price);
+            return toReturn;
+
+        }
+
         public FoodClass CreateFoodClass()
         {
+            
             Console.WriteLine("Enter name of the dish ");
             var FoodName = Console.ReadLine();
 
@@ -43,44 +131,12 @@ namespace MenuMasterLibrary
 
             Console.WriteLine("Enter price of the dish");
             var Price = Convert.ToDouble(Console.ReadLine());
+
             FoodClass toReturn = new FoodClass(FoodName, FoodContent, SpecialInfo, Price);
             return toReturn;
+
         }
 
-        public DishMenu CreateDishMenu()
-        {
-            Console.WriteLine("Enter Name of the Menu");
-            var MenuName = Console.ReadLine();
 
-            Console.WriteLine("Do you wanna add dish to the menu? (Y/N");
-            string MenuDecision = Console.ReadLine();
-
-            if(MenuDecision == "Y" || MenuDecision == "y")
-            {
-
-                ////List<FoodClass> FoodClasses = new List<FoodClass>();
-                //Console.WriteLine("Choose dish to add to menu:");
-                //int DishNumber = 1;
-                //for (int i = 0; i < FoodClasses.Count; i++)
-                //{
-                //    Console.WriteLine($"\n{DishNumber}. {FoodClasses[i].FoodName} \nContents: {FoodClasses[i].FoodContent} \nSpecial info: {FoodClasses[i].SpecialInfo} \nPrice: {FoodClasses[i].Price}\n\n");
-                //    DishNumber++;
-                //    Console.ReadKey();
-
-                //}
-                    DishMenu toReturn = new DishMenu(MenuName);
-                    return toReturn;
-
-  
-            }
-
-            else 
-            { 
-            
-            DishMenu toReturn = new DishMenu(MenuName);
-            return toReturn;
-
-            }
-        }
     } 
 }

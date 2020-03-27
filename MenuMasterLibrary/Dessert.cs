@@ -13,5 +13,17 @@ namespace MenuMasterLibrary
         public string SpecialInfo { get; set; }
 
         public double Price { get; set; }
+
+        public Dessert()
+        {
+
+        }
+        public Dessert(string DessertName, string DessertDescription, string SpecialInfo, double Price)
+        {
+            this.DessertName = DessertName;
+            this.DessertDescription = DessertDescription;
+            this.SpecialInfo = SpecialInfo;
+            this.Price = Price;
+        }
     }
 }
